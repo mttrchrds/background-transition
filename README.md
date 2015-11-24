@@ -9,12 +9,6 @@ downloaded prior to it being transitioned.
 
 A demo of the plugin is available [here](http://www.kreative.co.uk/github/backgrounTransition/).
 
-## Table of contents
-
-* [Installation](#installation)
-* [Customize the plugin](#customize)
-* [Credits](#credits)
-
 ## Installation
 
 1. Clone or download the repository.
@@ -35,9 +29,9 @@ the parent of your page's content (see below)
     <div class="backgroundTransition">
         <h1>My page title</h1>
 ```
- 5. Use the plugin as below. Ensure to use ".backgroundTransition" as the plugin
+5. Use the plugin as below. Ensure to use ".backgroundTransition" as the plugin
  selector.
- ````javascript
+```javascript
 $(function() {
   $('.backgroundTransition').backgroundTransition({
       backgrounds:[
@@ -49,21 +43,20 @@ $(function() {
       animationSpeed: 500
   });
 });
-````
-Options:
-| Name | Description | Type | Default |
-|------|-------------|------|---------|
-| `backgrounds` | An array of objects. Each object has a 'src' property followed by a relative path to an image. Please note that plugin requires at least 2 images. | Array | empty |
-| `transitionDelay` | A value, in seconds, of the delay between image transition. | Integer | 10 |
-| `animationSpeed` | The speed at which the image will fade in (milliseconds). The lower the number, the quicker the fade effect. | Integer | 1000 |
+```
+- Options are:
+- `backgrounds` is an array of objects. Each object has a 'src' property followed by a relative path to an image. Please note that plugin requires at least 2 images.
+- `transitionDelay` is a value, in seconds, of the delay between image transition. Default value is 10.
+- `animationSpeed` is the speed at which the image will fade in (milliseconds). Default value is 1000.
+
 6. Finally, add a CSS rule to your own CSS file to ensure that a background image is
 loaded on page load before DOM Ready. Ensure this image is the same image as the
 first image passed into the plugin (in example above "images/image1.jpg")
-````css
+```css
 .backgroundTransition {
   background-image: url('images/image1.jpg');
 }
-````
+```
 
 ### Customize
 
