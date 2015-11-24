@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>BackgroundTransition - a jQuery plugin</title>
+      <link rel="stylesheet" type="text/css" href="css/demo.css" />
+      <link rel="stylesheet" type="text/css" href="css/backgroundTransition.css" />
+  </head>
+  <body>
+      <div class="backgroundTransition">
+          <div class="content">
+              <h1>BackgroundTransition</h1>
+              <p>A jQuery plugin.</p>
+              <p>An extremely light and simple jQuery plugin to synchronously load and then
+              transition (fade-in/out) a list of images as full screen background-images on
+              a web page.</p>
+              <p>To aid performance, each image in the list you specify is individually
+              downloaded prior to it being transitioned.</p>
+              <p>Project is available on <a href="http://www.github.com/mattyrichards">Github</a>.</p>
+          </div>
+      </div>
+
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="../src/js/backgroundTransition.js"></script>
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $('.backgroundTransition').backgroundTransition({
+                  backgrounds:[
+                      { src: 'images/autumn.jpg' },
+                      { src: 'images/butterfly.jpg' },
+                      { src: 'images/green.jpg' },
+                      { src: 'images/lewisia.jpg' },
+                      { src: 'images/primate.jpg' },
+                      { src: 'images/sundew.jpg' }
+                  ],
+                  transitionDelay: 3,
+                  animationSpeed: 800
+              });
+          });
+      </script>
+  </body>
+</html>
