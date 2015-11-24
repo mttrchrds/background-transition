@@ -11,17 +11,20 @@ A demo of the plugin is available [here](http://www.kreative.co.uk/github/backgr
 
 ## Installation
 
-1. Clone or download the repository.
-2. Copy/move the minified CSS and JS files from "dist" folder into your own project.
-3. Link to the CSS and JS files in your own codebase. jQuery is a dependency of
+Clone or download the repository.
+
+Copy/move the minified CSS and JS files from "dist" folder into your own project.
+
+Link to the CSS and JS files in your own codebase. jQuery is a dependency of
 the plugin, therefore ensure that you link to jQuery before BackgroundTransition
 in your markup (see below).
+
 ```html
 <link rel="stylesheet" type="text/css" href="backgroundTransition.min.css" />
 ...
 <script type="text/javascript" src="backgroundTransition.min.js"></script>
 ```
-4. Add a DOM container with class "backgroundTransition" in your markup which is
+Add a DOM container with class "backgroundTransition" in your markup which is
 the parent of your page's content (see below)
 
 ```html
@@ -29,8 +32,8 @@ the parent of your page's content (see below)
     <div class="backgroundTransition">
         <h1>My page title</h1>
 ```
-5. Use the plugin as below. Ensure to use ".backgroundTransition" as the plugin
- selector.
+Use the plugin as below. Ensure to use ".backgroundTransition" as the plugin selector.
+
 ```javascript
 $(function() {
   $('.backgroundTransition').backgroundTransition({
@@ -44,14 +47,15 @@ $(function() {
   });
 });
 ```
-- Options are:
+Options are:
 - `backgrounds` is an array of objects. Each object has a 'src' property followed by a relative path to an image. Please note that plugin requires at least 2 images.
 - `transitionDelay` is a value, in seconds, of the delay between image transition. Default value is 10.
 - `animationSpeed` is the speed at which the image will fade in (milliseconds). Default value is 1000.
 
-6. Finally, add a CSS rule to your own CSS file to ensure that a background image is
+Finally, add a CSS rule to your own CSS file to ensure that a background image is
 loaded on page load before DOM Ready. Ensure this image is the same image as the
 first image passed into the plugin (in example above "images/image1.jpg")
+
 ```css
 .backgroundTransition {
   background-image: url('images/image1.jpg');
