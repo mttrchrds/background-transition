@@ -7,7 +7,7 @@ a web page.
 To aid performance, each image in the list you specify is individually
 downloaded prior to it being transitioned.
 
-A demo of the plugin is available [here](http://www.kreative.co.uk/github/backgrounTransition/).
+A demo of the plugin is available [here](http://www.kreative.co.uk/github/backgroundtransition/).
 
 ## Installation
 
