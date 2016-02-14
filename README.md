@@ -1,4 +1,4 @@
-# BackgroundTransition
+# background-transition
 
 An extremely light and simple jQuery plugin to synchronously load and then
 transition (fade-in/out) a list of images as full screen background-images on
